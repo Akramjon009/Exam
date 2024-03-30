@@ -1,3 +1,11 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+
+}
 .main{
     background: linear-gradient(105.18deg, #1E3C72 -2.04%, #2A5298 107.42%);
     width: auto;
@@ -119,4 +127,64 @@
     justify-content: center;
     margin-top: 50px;
     padding: 30px;
+}
+
+/* page3 */
+
+.container_phone_page{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 98px;
+
+}
+.container_phone_page h1{
+    color : black
+}
+
+.container_phone_page .items{
+    width: 540px;
+}
+.container_phone_page .title{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+.container_phone_page .subtitle{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Poppins;
+}
+
+.container_phone_page .items .item_card{
+    margin-top: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start  ;
+    gap: 18px;
+}
+
+.container_phone_page .items .item_card .icon_card{
+    width:100px;
+    height:57px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    background-color: rgba(255, 65, 109, 0.36);
+}
+
+.container_phone_page .items .item_card .item_card_items .hh1{
+    font-size: 18px;
+    font-weight: 500;
+    color : black;
+    margin-bottom:20px ;
+
 }
