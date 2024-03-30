@@ -1,0 +1,90 @@
+.main{
+    background: linear-gradient(105.18deg, #1E3C72 -2.04%, #2A5298 107.42%);
+    width: auto;
+    height: 650px;
+    border-radius: 0 0 150px 0;
+}
+.iqons
+{
+    width: 1251px;
+    height: 50px;
+    top: 21px;
+    left: 335px;
+    gap: 0px;
+    border-radius: 50px 0px 0px 0px;
+    opacity: 0px;
+
+}
+.div-stayl
+{
+    display: flex;
+    width: 200px;
+    height: 18px;   
+}
+.button
+{ 
+    text-align: center;
+    padding: 10px;
+    color:black;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 1.5px solid black;
+ 
+}
+.mainDiv{
+   display: flex; 
+   width: 80%;
+   margin: 0 auto;
+}
+.firstchild{
+    width: 65%;
+    margin-left: 10em;
+}
+.secondchild{
+    width: 55%;
+    position: relative;
+}
+.secondchild img:first-child{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 45%;
+
+}
+.secondchild img:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+}
+.btnplay{
+    display: inline;
+}
+.button-play
+{
+    margin-left: 10px;
+    text-align: center;
+    color: aliceblue;
+    display:flex;
+}
+.buttons{
+    display: flex;
+    align-items:center;
+}
+.info
+{
+    text-align: center;
+    border-color: black;
+    width: 995px;
+    height: 469.5px;
+    top: 1065px;
+    left: 463px;
+    gap: 0px;
+    opacity: 0px;
+}
+.about{
+    width: auto;
+    height: 650px;
+    border-radius: 0 0 150px 0;
+}
