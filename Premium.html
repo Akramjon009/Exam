@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата Premium</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 70%;
+      padding: 60px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+      font-size: 28px;
+    }
+    .form-group {
+      margin-bottom: 40px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #555;
+      font-size: 22px;
+    }
+    input[type="text"],
+    input[type="datetime-local"] {
+      width: 100%;
+      padding: 25px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-size: 24px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 25px;
+      background-color: #ff6b6b;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 24px;
+    }
+    button:hover {
+      background-color: #ee5253;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Оплата Premium</h2>
+    <form id="payment-form">
+      <div class="form-group">
+        <label for="card-number">Номер карты:</label>
+        <input type="text" id="card-number" placeholder="Введите номер карты" required>
+      </div>
+      <div class="form-group">
+        <label for="expiry">Срок действия:</label>
+        <input type="text" id="expiry" placeholder="MM/YY" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="CVV" required>
+      </div>
+      <div class="form-group">
+        <label for="datetime">Дата и время:</label>
+        <input type="datetime-local" id="datetime" required>
+      </div>
+      <a href="index.html"><button onclick="Call()" type="submit">Оплатить</button></a>
+    </form>
+  </div>
+  
+  <script>
+    function Call(){
+
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Get form values
+            var cardNumber = document.getElementById('card-number').value;
+            var expiry = document.getElementById('expiry').value;
+            var cvv = document.getElementById('cvv').value;
+            var datetime = document.getElementById('datetime').value;
+            
+            // Perform validation
+            // (Add your validation logic here)
+            
+            // If validation passes, you can proceed with payment
+            // (Add your payment logic here)
+            console.log('Payment submitted:', { cardNumber, expiry, cvv, datetime });
+        });
+    }
+  </script>
+</body>
+</html>
